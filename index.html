@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./@mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="nav-desktop">
+            <div class="logo">
+                <button onclick="toggleDarkMode()" class="home-btn"><i class="fas fa-home size"></i></button> > <span>
+                    press home icon to enable dark mode
+                </span>
+            </div>
+            <div id="list">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li id="menu">
+                        <i class="fas fa-bars"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile-img">
+            <img src="./assets/itsme.JPG" alt="MyImage" />
+        </div>
+        <div class="profile-main-text">
+            <div class="profile-text-container">
+                <p class="profile-title">Hello, I'm </p>
+                <h2 class="profile-heading">
+                    Satish Patta
+                </h2>
+                <p class="profile-role">
+                   Here is my Portfolio.
+                </p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Satish_Patta_Resume.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="social-icons-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/satish-patta-841971242/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/12SATISH'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-main-text">
+            <p class="text-1">Get To Know More</p>
+            <h3 class="text-2">About Me</h3>
+        </div>
+        <div class="about-main-section">
+            <div class="about-img-section">
+                <img src="./assets/imgbin-web-development-web-developer-web-design-software-developer-web-design-FBZK8ASjvwvWp0jx8L3uqGQxJ.jpg" />
+            </div>
+            <div class="about-exp-section">
+                <div class="about-flex">
+                    <div class="about-container">
+                        <img src="./assets/experience.png" class="icon" />
+                        <h2>Experience</h2>
+                        <p>
+                            Personal Projects <br>
+                            Frontend Development
+                        </p>
+                    </div>
+                    <div class="about-container">
+                        <img src="./assets/education.png" class="icon" />
+                        <h2>Education</h2>
+                        <p>
+                            Currenty <br> Studying in BE 3<sup>rd</sup> year in the domain of Computer Science and Engineering.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-text-container">
+                    I've made a personal project using  backend tech like Spring Boot,Spring Data JPA(ORM Frame Work),Spring Security and Integration with FrontEnd library like ReactJS .
+                    This app showcases my frontend development skills and Backend as well. It incorporates interactive elements, dynamic
+                    content presentation, and a user-friendly interface.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class=" icon arrow " onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <div class="about-main-text">
+            <p class="text-1">Explore My</p>
+            <h3 class="text-2">Known Technologies.</h3>
+        </div>
+        <div class="experience-container">
+            <div class="details-container">
+                <h2 class="sub-name">FrontEnd Developement</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>HTML</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>CSS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>Bootstrap</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>SASS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!--  backend tech -->
+            <div class="details-container">
+                <h2 class="sub-name">Backend Developement</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>Java</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>Oracle</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" class="icon" alt="experience" />
+                        <div class="exp">
+                            <h3>DSA</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class=" icon arrow1 " onclick="location.href='./#project'">
+    </section>
+    
+    <section id="contact">
+        <div class="about-main-text">
+            <p class="text-1">Get in Touch</p>
+            <h3 class="text-2">Contact Me</h3>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" class="icon" alt="mail" />
+                <p>
+                    <a href="mailto:'satishpatta690@gmail.com'">satishpatta690@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" class="icon" alt="linkedin" />
+                <p>
+                    <a href="https://www.linkedin.com/in/satish-patta-841971242/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div id="nav-desktop">
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="footer">
+           
+        </div>
+    </footer>
+</body>
+</html>
